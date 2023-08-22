@@ -1,1 +1,1 @@
-Fork from [ayamir/nvimdots](https://github.com/ayamir/nvimdots)
+Fork from [ayamir/nvimdots](https://github.com/ayamir/nvimdots).
