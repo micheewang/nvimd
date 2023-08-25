@@ -99,7 +99,7 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("edit: Show undo history"),
-	["n|<C-S-p>"] = map_callback(function()
+	["n|<C-A-p>"] = map_callback(function()
 			require("telescope").extensions.projects.projects({})
 		end)
 		:with_noremap()
@@ -111,7 +111,7 @@ local plug_map = {
 		:with_noremap()
 		:with_silent()
 		:with_desc("find: File by frecency"),
-	["n|<C-S-f>"] = map_callback(function()
+	["n|<C-f>"] = map_callback(function()
 			require("telescope").extensions.live_grep_args.live_grep_args()
 		end)
 		:with_noremap()

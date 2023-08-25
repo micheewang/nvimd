@@ -19,6 +19,23 @@ local plug_map = {
 	-- ["n|<leader>sl"] = map_cu("SessionLoad"):with_noremap():with_silent():with_desc("session: Load current"),
 	-- ["n|<leader>sd"] = map_cu("SessionDelete"):with_noremap():with_silent():with_desc("session: Delete"),
 
+	-- Plugin flash.nvim
+	["nxo|s"] = map_callback(function()
+		require("flash").jump()
+	end):with_desc("Flash"),
+	["nxo|S"] = map_callback(function()
+		require("flash").treesitter()
+	end):with_desc("Flash Treesitter"),
+	-- ["o|r"] = map_callback(function()
+	-- 	require("flash").remote()
+	-- end):with_desc("Remote Flash"),
+	-- ["ox|R"] = map_callback(function()
+	-- 	require("flash").treesitter_search()
+	-- end):with_desc("Flash Treesitter Search"),
+	-- ["c|<C-s>"] = map_callback(function()
+	-- 	require("flash").treesitter_search()
+	-- end):with_desc("Flash Treesitter Search"),
+
 	-- Plugin: nvim-bufdel
 	["n|<A-q>"] = map_cr("BufDel"):with_noremap():with_silent():with_desc("buffer: Close current"),
 
@@ -85,7 +102,7 @@ local plug_map = {
 	["i|<A-h>"] = map_cmd("<Plug>(TaboutBackMulti)"):with_silent():with_noremap():with_desc("edit: Goto begin of pair"),
 
 	-- Plugin suda.vim
-	["n|<A-s>"] = map_cu("SudaWrite"):with_silent():with_noremap():with_desc("editn: Save file using sudo"),
+	-- ["n|<A-s>"] = map_cu("SudaWrite"):with_silent():with_noremap():with_desc("editn: Save file using sudo"),
 }
 
 bind.nvim_load_mapping(plug_map)

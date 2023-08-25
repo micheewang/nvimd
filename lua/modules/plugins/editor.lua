@@ -1,10 +1,10 @@
 local editor = {}
 
-editor["rainbowhxch/accelerated-jk.nvim"] = {
-	lazy = true,
-	event = "VeryLazy",
-	config = require("editor.accelerated-jk"),
-}
+-- editor["rainbowhxch/accelerated-jk.nvim"] = {
+-- 	lazy = true,
+-- 	event = "VeryLazy",
+-- 	config = require("editor.accelerated-jk"),
+-- }
 editor["olimorris/persisted.nvim"] = {
 	lazy = true,
 	cmd = {
@@ -56,12 +56,12 @@ editor["junegunn/vim-easy-align"] = {
 	lazy = true,
 	cmd = "EasyAlign",
 }
-editor["smoka7/hop.nvim"] = {
-	lazy = true,
-	version = "*",
-	event = { "CursorHold", "CursorHoldI" },
-	config = require("editor.hop"),
-}
+-- editor["smoka7/hop.nvim"] = {
+-- 	lazy = true,
+-- 	version = "*",
+-- 	event = { "CursorHold", "CursorHoldI" },
+-- 	config = require("editor.hop"),
+-- }
 editor["RRethy/vim-illuminate"] = {
 	lazy = true,
 	event = { "CursorHold", "CursorHoldI" },
@@ -92,7 +92,7 @@ editor["nvim-treesitter/nvim-treesitter"] = {
 	dependencies = {
 		{ "nvim-treesitter/nvim-treesitter-textobjects" },
 		{ "JoosepAlviste/nvim-ts-context-commentstring" },
-		{ "mfussenegger/nvim-treehopper" },
+		-- { "mfussenegger/nvim-treehopper" },
 		{ "andymass/vim-matchup" },
 		{
 			"hiphish/rainbow-delimiters.nvim",
@@ -115,6 +115,11 @@ editor["nvim-treesitter/nvim-treesitter"] = {
 			config = require("editor.tabout"),
 		},
 	},
+}
+editor["folke/flash.nvim"] = {
+	lazy = true,
+	event = "VeryLazy",
+	config = require("editor.flash"),
 }
 
 return editor
