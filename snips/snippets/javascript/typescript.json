@@ -1,0 +1,7 @@
+{
+  "const": {
+    "prefix": "cs",
+    "body": "const $1 = $0",
+    "description": "Snippet for const"
+  }
+}

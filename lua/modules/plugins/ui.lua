@@ -16,6 +16,10 @@ ui["Jint-lzxy/nvim"] = {
 	name = "catppuccin",
 	config = require("ui.catppuccin"),
 }
+ui["navarasu/onedark.nvim"] = {
+	lazy = false,
+	config = require("ui.onedark"),
+}
 ui["sainnhe/edge"] = {
 	lazy = true,
 	config = require("ui.edge"),

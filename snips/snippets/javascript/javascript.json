@@ -1,0 +1,32 @@
+{
+  "export default function ": {
+    "prefix": "edf",
+    "body": "export default function ${TM_FILENAME_BASE:3}($1){$2}",
+    "description": "export default function"
+  },
+  "export function": {
+    "prefix": "ef",
+    "body": "export function ${1:name}($2){$3}",
+    "description": "export function"
+  },
+  "export variable": {
+    "prefix": "evar",
+    "body": "export { ${1:variable} }",
+    "description": "export variable"
+  },
+  "file name": {
+    "prefix": "fl",
+    "body": "$TM_FILENAME_BASE",
+    "description": "file name"
+  },
+  "arrow function1": {
+    "prefix": "af",
+    "body": "($1) => $2",
+    "description": "arrow function"
+  },
+  "arrow function2": {
+    "prefix": "afs",
+    "body": "($1) => {$2}",
+    "description": "arrow function with {"
+  }
+}

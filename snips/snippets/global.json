@@ -1,0 +1,7 @@
+{
+  "return": {
+    "prefix": "rt",
+    "body": "return $1",
+    "description": "return a function"
+  }
+}
