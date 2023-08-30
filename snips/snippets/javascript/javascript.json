@@ -28,5 +28,20 @@
     "prefix": "afs",
     "body": "($1) => {$2}",
     "description": "arrow function with {"
+  },
+  "console log": {
+    "prefix": "clg",
+    "body": "console.log($1)",
+    "description": "console"
+  },
+  "const": {
+    "prefix": "cs",
+    "body": "const $1 = $0",
+    "description": "Snippet for const"
+  },
+  "const": {
+    "prefix": "cs",
+    "body": "const {$2} = $1",
+    "description": "Snippet for const"
   }
 }
